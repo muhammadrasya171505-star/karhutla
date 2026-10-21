@@ -1,0 +1,103 @@
+/* 1. Menyelaraskan ukuran margin dan font dasar seluruh halaman */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Mengatur warna latar belakang halaman web */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 3. Kotak pembungkus utama agar posisinya di tengah layar */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 4. Mengatur tampilan judul utama & subjudul */
+h1 {
+    color: #d9534f; /* Warna merah tema darurat/karhutla */
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+p.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* 5. Desain kotak daftar rekening */
+.card {
+    background: #fdf2f2;
+    border-left: 4px solid #d9534f; /* Garis pembatas merah di sisi kiri */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #d9534f;
+}
+
+.bank-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.bank-item strong {
+    display: block;
+    color: #222;
+}
+
+/* 6. Desain formulir input */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 7. Desain tombol hijau WhatsApp */
+button {
+    width: 100%;
+    background-color: #25d366; /* Warna khas WhatsApp */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Efek ketika tombol disentuh/diarahkan kursor */
+button:hover {
+    background-color: #1eb954;
+}
