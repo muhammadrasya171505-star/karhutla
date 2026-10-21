@@ -5,61 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donasi Korban Karhutla</title>
     
-    <!-- Menghubungkan file HTML ini dengan file styling (style.css) -->
+    <!-- Menghubungkan file HTML ke file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <!-- Judul dan Deskripsi Singkat -->
-    <h1>Donasi Korban Karhutla</h1>
-    <p class="subtitle">Bantuan kamu sangat berarti untuk saudara kita yang terdampak kebakaran hutan dan lahan.</p>
+    <!-- Header Halaman -->
+    <div class="header">
+        <h1>Donasi Korban Karhutla</h1>
+        <p>Bantuan Anda sangat berarti untuk saudara kita yang terdampak bencana kebakaran hutan dan lahan.</p>
+    </div>
 
-    <!-- KOTAK INFORMASI REKENING -->
-    <div class="card">
-        <h3>Daftar Rekening Donasi</h3>
-        <div class="bank-item">
-            <strong>Bank BCA</strong>
-            <span>1234567890 a.n. Peduli Karhutla</span>
+    <!-- Informasi Rekening Donasi -->
+    <div class="rekening-box">
+        <h2>Daftar Rekening & E-Wallet</h2>
+        
+        <div class="rekening-item">
+            <span class="bank-name">Bank BCA</span>
+            <span class="acc-number">1234 5678 90</span>
+            <span class="acc-holder">a.n. Peduli Karhutla</span>
         </div>
-        <div class="bank-item">
-            <strong>Bank Mandiri</strong>
-            <span>0987654321 a.n. Peduli Karhutla</span>
+
+        <div class="rekening-item">
+            <span class="bank-name">Bank Mandiri</span>
+            <span class="acc-number">0987 6543 21</span>
+            <span class="acc-holder">a.n. Peduli Karhutla</span>
         </div>
-        <div class="bank-item">
-            <strong>E-Wallet (Gopay / OVO / Dana)</strong>
-            <span>081234567890</span>
+
+        <div class="rekening-item">
+            <span class="bank-name">E-Wallet (GoPay / OVO / DANA)</span>
+            <span class="acc-number">0812 3456 7890</span>
+            <span class="acc-holder">a.n. Peduli Karhutla</span>
         </div>
     </div>
 
-    <!-- FORMULIR ISIAN DONASI -->
-    <form id="donationForm">
-        <div class="form-group">
-            <label for="nama">Nama Donatur</label>
-            <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+    <!-- Formulir Konfirmasi Donasi -->
+    <form id="formDonasi" class="form-donasi">
+        <h2>Formulir Konfirmasi Transfer</h2>
+
+        <div class="input-group">
+            <label for="nama">Nama Lengkap Donatur</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
         </div>
 
-        <div class="form-group">
-            <label for="jumlah">Nominal Donasi (Rp)</label>
-            <input type="number" id="jumlah" placeholder="Contoh: 100000" required>
+        <div class="input-group">
+            <label for="nominal">Nominal Donasi (Rp)</label>
+            <input type="number" id="nominal" placeholder="Contoh: 100000" min="1000" required>
         </div>
 
-        <div class="form-group">
-            <label for="bank">Tujuan Transfer</label>
+        <div class="input-group">
+            <label for="bank">Transfer Ke Rekening/E-Wallet</label>
             <select id="bank" required>
-                <option value="">Pilih Bank / E-Wallet</option>
-                <option value="BCA">BCA</option>
-                <option value="Mandiri">Mandiri</option>
-                <option value="E-Wallet">E-Wallet (Gopay/OVO/Dana)</option>
+                <option value="">-- Pilih Rekening Tujuan --</option>
+                <option value="BCA">Bank BCA</option>
+                <option value="Mandiri">Bank Mandiri</option>
+                <option value="E-Wallet">E-Wallet (GoPay/OVO/DANA)</option>
             </select>
         </div>
 
-        <!-- Tombol untuk memicu pengiriman pesan WhatsApp -->
-        <button type="button" id="btnKonfirmasi">Konfirmasi via WhatsApp</button>
+        <!-- Tombol tipe submit untuk mengirimkan formulir -->
+        <button type="submit" class="btn-wa">
+            Konfirmasi via WhatsApp
+        </button>
     </form>
 </div>
 
-<!-- Menghubungkan file HTML ini dengan logika JavaScript (script.js) -->
+<!-- Menghubungkan file HTML ke file JavaScript -->
 <script src="script.js"></script>
 </body>
 </html>
