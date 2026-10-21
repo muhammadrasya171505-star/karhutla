@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi Korban Karhutla</title>
+    
+    <!-- Menghubungkan file HTML ini dengan file styling (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Judul dan Deskripsi Singkat -->
+    <h1>Donasi Korban Karhutla</h1>
+    <p class="subtitle">Bantuan kamu sangat berarti untuk saudara kita yang terdampak kebakaran hutan dan lahan.</p>
+
+    <!-- KOTAK INFORMASI REKENING -->
+    <div class="card">
+        <h3>Daftar Rekening Donasi</h3>
+        <div class="bank-item">
+            <strong>Bank BCA</strong>
+            <span>1234567890 a.n. Peduli Karhutla</span>
+        </div>
+        <div class="bank-item">
+            <strong>Bank Mandiri</strong>
+            <span>0987654321 a.n. Peduli Karhutla</span>
+        </div>
+        <div class="bank-item">
+            <strong>E-Wallet (Gopay / OVO / Dana)</strong>
+            <span>081234567890</span>
+        </div>
+    </div>
+
+    <!-- FORMULIR ISIAN DONASI -->
+    <form id="donationForm">
+        <div class="form-group">
+            <label for="nama">Nama Donatur</label>
+            <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+        </div>
+
+        <div class="form-group">
+            <label for="jumlah">Nominal Donasi (Rp)</label>
+            <input type="number" id="jumlah" placeholder="Contoh: 100000" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bank">Tujuan Transfer</label>
+            <select id="bank" required>
+                <option value="">Pilih Bank / E-Wallet</option>
+                <option value="BCA">BCA</option>
+                <option value="Mandiri">Mandiri</option>
+                <option value="E-Wallet">E-Wallet (Gopay/OVO/Dana)</option>
+            </select>
+        </div>
+
+        <!-- Tombol untuk memicu pengiriman pesan WhatsApp -->
+        <button type="button" id="btnKonfirmasi">Konfirmasi via WhatsApp</button>
+    </form>
+</div>
+
+<!-- Menghubungkan file HTML ini dengan logika JavaScript (script.js) -->
+<script src="script.js"></script>
+</body>
+</html>
